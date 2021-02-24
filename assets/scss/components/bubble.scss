@@ -1,0 +1,44 @@
+// Bubble
+
+.bubble {
+	border-radius: $line-height * 1.5;
+	padding: $line-height;
+	margin-top: $line-height;
+	margin-bottom: $line-height;
+
+	&:nth-child(odd) {
+		background-color: $purple;
+		border-top-right-radius: 0;
+		margin-left: $line-height;
+	}
+
+	&:nth-child(even) {
+		background-color: $grey-lighter;
+		border-top-left-radius: 0;
+		margin-right: $line-height;
+	}
+
+	&:last-child {
+		display: inline-block;
+		margin-top: 0;
+	}
+}
+
+@media (min-width: 768px) {
+	.bubble {
+		padding-right: $line-height * 2;
+		padding-left: $line-height * 2;
+		margin-top: $line-height * 2;
+		margin-bottom: $line-height * 2;
+
+		&:nth-child(odd) {
+			margin-right: 10%;
+			margin-left: 40%;
+		}
+
+		&:nth-child(even) {
+			margin-right: 40%;
+			margin-left: 10%;
+		}
+	}
+}

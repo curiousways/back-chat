@@ -56,7 +56,7 @@
   }
 }
 html {
-  color: #2b2b2b;
+  color: #404040;
   background-color: #f4f4f4;
   font-family: "Aribau Grotesk", system-ui, sans-serif;
   font-size: 18px;
@@ -71,6 +71,15 @@ html {
 html.dark {
   color: #ffffff;
   background-color: #2b2b2b;
+}
+html.dark section.chat .col {
+  background-color: #222222;
+}
+html.dark .bubble:nth-child(odd) {
+  color: #404040;
+}
+html.dark .bubble:nth-child(even) {
+  background-color: #404040;
 }
 
 *,
@@ -108,6 +117,14 @@ h6 {
   font-family: "Space Mono", monospace;
   margin: 0 0 26px;
 }
+h1:last-child,
+h2:last-child,
+h3:last-child,
+h4:last-child,
+h5:last-child,
+h6:last-child {
+  margin-bottom: 0;
+}
 
 h1 {
   font-size: 34px;
@@ -126,7 +143,47 @@ h6 {
 p {
   margin: 0 0 26px;
 }
+p:last-child {
+  margin-bottom: 0;
+}
 
+.bubble {
+  border-radius: 39px;
+  padding: 26px;
+  margin-top: 26px;
+  margin-bottom: 26px;
+}
+.bubble:nth-child(odd) {
+  background-color: #b486e2;
+  border-top-right-radius: 0;
+  margin-left: 26px;
+}
+.bubble:nth-child(even) {
+  background-color: #e3e3e3;
+  border-top-left-radius: 0;
+  margin-right: 26px;
+}
+.bubble:last-child {
+  display: inline-block;
+  margin-top: 0;
+}
+
+@media (min-width: 768px) {
+  .bubble {
+    padding-right: 52px;
+    padding-left: 52px;
+    margin-top: 52px;
+    margin-bottom: 52px;
+  }
+  .bubble:nth-child(odd) {
+    margin-right: 10%;
+    margin-left: 40%;
+  }
+  .bubble:nth-child(even) {
+    margin-right: 40%;
+    margin-left: 10%;
+  }
+}
 button,
 .button,
 button[type=submit] {
@@ -227,6 +284,16 @@ button[type=submit] {
 }
 .head__button.active span {
   left: 29px;
+}
+
+section {
+  margin-bottom: 52px;
+}
+
+section.chat .col {
+  background: #ffffff;
+  border-top-left-radius: 39px;
+  border-top-right-radius: 39px;
 }
 
 /*# sourceMappingURL=styles.css.map */
