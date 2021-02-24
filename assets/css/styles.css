@@ -139,24 +139,48 @@ button[type=submit] {
   font-weight: bold;
   border: 2px solid #b486e2;
   border-radius: 26px;
-  padding: 13px;
+  padding: 13px 52px;
 }
 
-form {
+.form {
   display: flex;
   flex-direction: column;
-  max-width: 350px;
-  text-align: center;
-  margin: auto;
+  margin: -13px;
+}
+
+.form__row {
+  display: flex;
+  justify-content: center;
 }
 
 input {
   color: inherit;
   background: none;
+  width: 100%;
+  text-align: center;
   border: 2px solid;
   border-radius: 26px;
   padding: 13px;
-  margin-bottom: 13px;
+  margin: 13px;
+}
+input::-webkit-input-placeholder {
+  color: inherit;
+  text-align: center;
+}
+input:-moz-placeholder {
+  /* Firefox 18- */
+  text-align: center;
+}
+input::-moz-placeholder {
+  /* Firefox 19+ */
+  text-align: center;
+}
+input:-ms-input-placeholder {
+  text-align: center;
+}
+
+button[type=submit] {
+  margin: 13px;
 }
 
 .head {

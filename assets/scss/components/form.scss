@@ -1,18 +1,47 @@
 // Form
 
-form {
+.form {
 	display: flex;
 	flex-direction: column;
-	max-width: 350px;
-	text-align: center;
-	margin: auto;
+	margin: -$line-height/2;
+}
+
+.form__row {
+	display: flex;
+	justify-content: center;
 }
 
 input {
 	color: inherit;
 	background: none;
+	width: 100%;
+	text-align: center;
 	border: 2px solid;
 	border-radius: $line-height;
 	padding: $line-height/2;
-	margin-bottom: $line-height/2;
+	margin: $line-height/2;
+
+	&::-webkit-input-placeholder {
+		color: inherit;
+		text-align: center;
+	}
+
+	&:-moz-placeholder {
+		/* Firefox 18- */
+		text-align: center;
+	}
+
+	&::-moz-placeholder {
+		/* Firefox 19+ */
+		text-align: center;
+	}
+
+	&:-ms-input-placeholder {
+		text-align: center;
+	}
+}
+
+button[type="submit"] {
+	@extend .button;
+	margin: $line-height/2;
 }

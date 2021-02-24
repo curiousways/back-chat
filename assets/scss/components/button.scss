@@ -11,9 +11,5 @@ button,
 	font-weight: bold;
 	border: 2px solid $primary;
 	border-radius: $line-height;
-	padding: $line-height/2;
-}
-
-button[type="submit"] {
-	@extend .button;
+	padding: $line-height/2 $line-height * 2;
 }
