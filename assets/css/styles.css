@@ -127,6 +127,16 @@ p {
   margin: 0 0 26px;
 }
 
+.bubble {
+  padding: 26px;
+}
+.bubble:nth-child(odd) {
+  background-color: #b486e2;
+}
+.bubble:nth-child(even) {
+  background-color: #e3e3e3;
+}
+
 button,
 .button,
 button[type=submit] {
@@ -227,6 +237,15 @@ button[type=submit] {
 }
 .head__button.active span {
   left: 29px;
+}
+
+section {
+  margin-bottom: 52px;
+}
+
+section.convo .col {
+  background: #ffffff;
+  border-radius: 52px;
 }
 
 /*# sourceMappingURL=styles.css.map */

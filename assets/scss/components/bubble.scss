@@ -1,0 +1,13 @@
+// Bubble
+
+.bubble {
+	padding: $line-height;
+
+	&:nth-child(odd) {
+		background-color: $purple;
+	}
+
+	&:nth-child(even) {
+		background-color: $grey-lighter;
+	}
+}
