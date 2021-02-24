@@ -72,7 +72,7 @@ html.dark {
   color: #ffffff;
   background-color: #2b2b2b;
 }
-html.dark section.convo .col {
+html.dark section.chat .col {
   background-color: #222222;
 }
 html.dark .bubble:nth-child(odd) {
@@ -290,7 +290,7 @@ section {
   margin-bottom: 52px;
 }
 
-section.convo .col {
+section.chat .col {
   background: #ffffff;
   border-top-left-radius: 39px;
   border-top-right-radius: 39px;
