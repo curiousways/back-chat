@@ -3,12 +3,11 @@
 .form {
 	display: flex;
 	flex-direction: column;
-	margin: -$line-height/2;
+	margin-top: -$line-height/2;
+	margin-bottom: -$line-height/2;
 }
 
 .form__row {
-	display: flex;
-	justify-content: center;
 }
 
 input {
@@ -19,7 +18,8 @@ input {
 	border: 2px solid;
 	border-radius: $line-height;
 	padding: $line-height/2;
-	margin: $line-height/2;
+	margin-top: $line-height/2;
+	margin-bottom: $line-height/2;
 
 	&::-webkit-input-placeholder {
 		color: inherit;
@@ -44,4 +44,21 @@ input {
 button[type="submit"] {
 	@extend .button;
 	margin: $line-height/2;
+}
+
+@media (min-width: 601px) {
+	.form {
+		margin-right: -$line-height/2;
+		margin-left: -$line-height/2;
+	}
+
+	.form__row {
+		display: flex;
+		justify-content: center;
+	}
+
+	input {
+		margin-right: $line-height/2;
+		margin-left: $line-height/2;
+	}
 }

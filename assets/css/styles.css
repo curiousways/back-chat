@@ -145,12 +145,8 @@ button[type=submit] {
 .form {
   display: flex;
   flex-direction: column;
-  margin: -13px;
-}
-
-.form__row {
-  display: flex;
-  justify-content: center;
+  margin-top: -13px;
+  margin-bottom: -13px;
 }
 
 input {
@@ -161,7 +157,8 @@ input {
   border: 2px solid;
   border-radius: 26px;
   padding: 13px;
-  margin: 13px;
+  margin-top: 13px;
+  margin-bottom: 13px;
 }
 input::-webkit-input-placeholder {
   color: inherit;
@@ -183,6 +180,22 @@ button[type=submit] {
   margin: 13px;
 }
 
+@media (min-width: 601px) {
+  .form {
+    margin-right: -13px;
+    margin-left: -13px;
+  }
+
+  .form__row {
+    display: flex;
+    justify-content: center;
+  }
+
+  input {
+    margin-right: 13px;
+    margin-left: 13px;
+  }
+}
 .head {
   margin-top: 26px;
 }
