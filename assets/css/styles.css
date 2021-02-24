@@ -1,5 +1,12 @@
 html {
-  background-color: #f4f4f4;
+  color: #404040;
+  font-family: #f4f4f4;
+  font-size: 18px;
+  line-height: 26px;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
 }
 
 /*# sourceMappingURL=styles.css.map */
