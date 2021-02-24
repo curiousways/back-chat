@@ -1,3 +1,7 @@
+.center {
+  text-align: center;
+}
+
 html {
   color: #404040;
   font-family: #f4f4f4;
@@ -19,6 +23,16 @@ img,
 svg {
   vertical-align: top;
   max-width: 100%;
+}
+
+.row {
+  max-width: 1280px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.col {
+  padding: 26px;
 }
 
 /*# sourceMappingURL=styles.css.map */
