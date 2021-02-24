@@ -1,0 +1,47 @@
+// Input
+
+input:not([type="checkbox"]):not([type="radio"]) {
+	color: inherit;
+	background: none;
+	width: 100%;
+	text-align: center;
+	border: $border-width solid;
+	border-radius: $line-height;
+	outline: none;
+	padding: $line-height/2;
+
+	&:focus {
+		border-color: $primary;
+	}
+
+	// Source: https://css-tricks.com/snippets/css/style-placeholder-text/
+	&::-webkit-input-placeholder {
+		color: inherit;
+		text-align: center;
+	}
+
+	&:-moz-placeholder {
+		/* Firefox 18- */
+		text-align: center;
+	}
+
+	&::-moz-placeholder {
+		/* Firefox 19+ */
+		text-align: center;
+	}
+
+	&:-ms-input-placeholder {
+		text-align: center;
+	}
+}
+
+input[type="checkbox"] {
+	float: left;
+	cursor: pointer;
+	margin-right: $line-height/4;
+}
+
+label {
+	text-align: left;
+	cursor: pointer;
+}

@@ -10,65 +10,10 @@
 }
 
 .form__row {
-}
-
-input {
-	color: inherit;
-	background: none;
-	width: 100%;
-	text-align: center;
-	border: $border-width solid;
-	border-radius: $line-height;
-	outline: none;
-	padding: $line-height/2;
-	margin-top: $line-height/2;
-	margin-bottom: $line-height/2;
-
-	&:focus {
-		border-color: $primary;
-	}
-
-	// Source: https://css-tricks.com/snippets/css/style-placeholder-text/
-	&::-webkit-input-placeholder {
-		color: inherit;
-		text-align: center;
-	}
-
-	&:-moz-placeholder {
-		/* Firefox 18- */
-		text-align: center;
-	}
-
-	&::-moz-placeholder {
-		/* Firefox 19+ */
-		text-align: center;
-	}
-
-	&:-ms-input-placeholder {
-		text-align: center;
-	}
+	margin-bottom: $line-height;
 }
 
 button[type="submit"] {
 	@extend .button;
 	width: 100%;
-	// margin: $line-height/2;
-	margin-top: $line-height/2;
-}
-
-@media (min-width: 601px) {
-	// .form {
-	// margin-right: -$line-height/2;
-	// margin-left: -$line-height/2;
-	// }
-
-	// .form__row {
-	// display: flex;
-	// justify-content: center;
-	// }
-
-	// input {
-	// margin-right: $line-height/2;
-	// margin-left: $line-height/2;
-	// }
 }
