@@ -56,7 +56,7 @@
   }
 }
 html {
-  color: #2b2b2b;
+  color: #404040;
   background-color: #f4f4f4;
   font-family: "Aribau Grotesk", system-ui, sans-serif;
   font-size: 18px;
@@ -155,6 +155,20 @@ p:last-child {
   margin-right: 26px;
 }
 
+@media (min-width: 768px) {
+  .bubble {
+    padding-right: 52px;
+    padding-left: 52px;
+  }
+  .bubble:nth-child(odd) {
+    margin-right: 10%;
+    margin-left: 40%;
+  }
+  .bubble:nth-child(even) {
+    margin-right: 40%;
+    margin-left: 10%;
+  }
+}
 button,
 .button,
 button[type=submit] {
