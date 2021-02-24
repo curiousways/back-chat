@@ -8,6 +8,10 @@ h5,
 h6 {
 	font-family: "Space Mono", monospace;
 	margin: 0 0 $line-height;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
 }
 
 h1 {
@@ -26,4 +30,8 @@ h6 {
 
 p {
 	margin: 0 0 $line-height;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
 }

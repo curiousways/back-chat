@@ -108,6 +108,14 @@ h6 {
   font-family: "Space Mono", monospace;
   margin: 0 0 26px;
 }
+h1:last-child,
+h2:last-child,
+h3:last-child,
+h4:last-child,
+h5:last-child,
+h6:last-child {
+  margin-bottom: 0;
+}
 
 h1 {
   font-size: 34px;
@@ -126,15 +134,21 @@ h6 {
 p {
   margin: 0 0 26px;
 }
+p:last-child {
+  margin-bottom: 0;
+}
 
 .bubble {
+  border-radius: 39px;
   padding: 26px;
 }
 .bubble:nth-child(odd) {
   background-color: #b486e2;
+  border-top-right-radius: 0;
 }
 .bubble:nth-child(even) {
   background-color: #e3e3e3;
+  border-top-left-radius: 0;
 }
 
 button,
@@ -245,7 +259,7 @@ section {
 
 section.convo .col {
   background: #ffffff;
-  border-radius: 52px;
+  border-radius: 39px;
 }
 
 /*# sourceMappingURL=styles.css.map */
