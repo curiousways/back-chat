@@ -15,12 +15,18 @@ input {
 	background: none;
 	width: 100%;
 	text-align: center;
-	border: 2px solid;
+	border: $border-width solid;
 	border-radius: $line-height;
+	outline: none;
 	padding: $line-height/2;
 	margin-top: $line-height/2;
 	margin-bottom: $line-height/2;
 
+	&:focus {
+		border-color: $primary;
+	}
+
+	// Source: https://css-tricks.com/snippets/css/style-placeholder-text/
 	&::-webkit-input-placeholder {
 		color: inherit;
 		text-align: center;

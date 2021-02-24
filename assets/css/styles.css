@@ -137,9 +137,19 @@ button[type=submit] {
   color: #b486e2;
   background: none;
   font-weight: bold;
-  border: 2px solid #b486e2;
+  border: 2px solid;
   border-radius: 26px;
+  outline: none;
   padding: 13px 52px;
+}
+.button:hover, button[type=submit]:hover, .button:focus, button[type=submit]:focus {
+  color: #a6aabb;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 2px;
+}
+.button:active, button[type=submit]:active {
+  transform: translateY(2px);
 }
 
 .form {
@@ -156,9 +166,13 @@ input {
   text-align: center;
   border: 2px solid;
   border-radius: 26px;
+  outline: none;
   padding: 13px;
   margin-top: 13px;
   margin-bottom: 13px;
+}
+input:focus {
+  border-color: #b486e2;
 }
 input::-webkit-input-placeholder {
   color: inherit;
