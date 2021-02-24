@@ -6,6 +6,10 @@
 	margin-left: auto;
 }
 
+.row--tight {
+	max-width: 700px;
+}
+
 .col {
 	padding: $line-height;
 }

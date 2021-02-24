@@ -10,10 +10,21 @@
 	</head>
 
 	<body>
-		<header></header>
+		
+		<header class="head">
+			<div class="row">
+				<div class="col">
+					<img src="assets/images/bck_cht_logo_light.svg" class="hide-lg" alt="BackChat logo" />
+					<img src="assets/images/bck_logo_light.svg" class="hide-sm" alt="BCK" />
+					<button id="theme-toggle" class="head__button"><span></span></button>
+					<img src="assets/images/cht_logo.svg" class="hide-sm" alt="CHT" />
+				</div>
+			</div>
+		</header>
+		
 		<main>
 			<section>
-				<div class="row">
+				<div class="row row--tight">
 					<div class="col center">
 						<h1>Abbreviated conversations about this and that and architecture</h1>
 						<p>Text messages are like love notes – brief, sparse and intimate. They reveal different things than spoken conversation – different selves.</p>
@@ -26,6 +37,17 @@
 				</div>
 			</section>
 		</main>
-		<footer></footer>
+
+		<footer>
+			<script>
+				const toggle = document.getElementById('theme-toggle');
+				
+				toggle.addEventListener('click', function() {
+					toggle.classList.toggle('active');
+					document.documentElement.classList.toggle('dark');
+				})
+			</script>
+		</footer>
+
 	</body>
 </html>

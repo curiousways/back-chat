@@ -21,8 +21,6 @@
  * 
  * © 2019 MyFonts Inc
 */
-/* @import must be at top of file, otherwise CSS will not work */
-@import url("//hello.myfonts.net/count/3aa5f4");
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 @font-face {
   font-family: "Aribau Grotesk";
@@ -42,6 +40,21 @@
   text-align: center;
 }
 
+.hide-sm,
+.hide-lg {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .hide-lg {
+    display: block;
+  }
+}
+@media (min-width: 768px) {
+  .hide-sm {
+    display: block;
+  }
+}
 html {
   color: #2b2b2b;
   background-color: #f4f4f4;
@@ -49,9 +62,15 @@ html {
   font-size: 18px;
   line-height: 26px;
   overflow-x: hidden;
+  transition: color 0.5s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-smoothing: antialiased;
+}
+
+html.dark {
+  color: #ffffff;
+  background-color: #2b2b2b;
 }
 
 *,
@@ -70,6 +89,10 @@ svg {
   max-width: 1280px;
   margin-right: auto;
   margin-left: auto;
+}
+
+.row--tight {
+  max-width: 700px;
 }
 
 .col {
@@ -102,6 +125,43 @@ h6 {
 
 p {
   margin: 0 0 26px;
+}
+
+button,
+.button {
+  cursor: pointer;
+}
+
+.head {
+  margin-top: 26px;
+}
+.head .col {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.head__button {
+  background: #404040;
+  border: none;
+  position: relative;
+  width: 52px;
+  height: 26px;
+  border-radius: 26px;
+  padding: 0;
+}
+.head__button span {
+  background: #a6aabb;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  transition: left 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.head__button.active span {
+  left: 29px;
 }
 
 /*# sourceMappingURL=styles.css.map */
