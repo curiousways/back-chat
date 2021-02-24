@@ -9,8 +9,6 @@ input:not([type="checkbox"]):not([type="radio"]) {
 	border-radius: $line-height;
 	outline: none;
 	padding: $line-height/2;
-	margin-top: $line-height/2;
-	margin-bottom: $line-height/2;
 
 	&:focus {
 		border-color: $primary;
@@ -37,9 +35,13 @@ input:not([type="checkbox"]):not([type="radio"]) {
 	}
 }
 
-button[type="submit"] {
-	@extend .button;
-	width: 100%;
-	// margin: $line-height/2;
-	margin-top: $line-height/2;
+input[type="checkbox"] {
+	float: left;
+	cursor: pointer;
+	margin-right: $line-height/4;
+}
+
+label {
+	text-align: left;
+	cursor: pointer;
 }

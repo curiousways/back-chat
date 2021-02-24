@@ -151,6 +151,11 @@ a {
   color: #b486e2;
 }
 
+.iota {
+  font-size: 14px;
+  line-height: 18px;
+}
+
 .bubble {
   border-radius: 39px;
   padding: 26px;
@@ -222,6 +227,14 @@ button[type=submit] {
   margin: auto;
 }
 
+.form__row {
+  margin-bottom: 26px;
+}
+
+button[type=submit] {
+  width: 100%;
+}
+
 .head {
   margin-top: 26px;
 }
@@ -263,8 +276,6 @@ input:not([type=checkbox]):not([type=radio]) {
   border-radius: 26px;
   outline: none;
   padding: 13px;
-  margin-top: 13px;
-  margin-bottom: 13px;
 }
 input:not([type=checkbox]):not([type=radio]):focus {
   border-color: #b486e2;
@@ -285,9 +296,15 @@ input:not([type=checkbox]):not([type=radio]):-ms-input-placeholder {
   text-align: center;
 }
 
-button[type=submit] {
-  width: 100%;
-  margin-top: 13px;
+input[type=checkbox] {
+  float: left;
+  cursor: pointer;
+  margin-right: 6.5px;
+}
+
+label {
+  text-align: left;
+  cursor: pointer;
 }
 
 section {

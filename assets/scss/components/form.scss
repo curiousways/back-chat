@@ -10,21 +10,10 @@
 }
 
 .form__row {
+	margin-bottom: $line-height;
 }
 
-@media (min-width: 601px) {
-	// .form {
-	// margin-right: -$line-height/2;
-	// margin-left: -$line-height/2;
-	// }
-
-	// .form__row {
-	// display: flex;
-	// justify-content: center;
-	// }
-
-	// input {
-	// margin-right: $line-height/2;
-	// margin-left: $line-height/2;
-	// }
+button[type="submit"] {
+	@extend .button;
+	width: 100%;
 }
