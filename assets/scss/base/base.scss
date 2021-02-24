@@ -14,11 +14,11 @@ html {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	font-smoothing: antialiased;
+}
 
-	&.dark {
-		color: $white;
-		background-color: $grey-darker;
-	}
+html.dark {
+	color: $white;
+	background-color: $grey-darker;
 }
 
 *,
