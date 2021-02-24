@@ -1,0 +1,26 @@
+// Base
+
+html {
+	color: $grey-dark;
+	font-family: $grey-lightest;
+	font-size: 18px;
+	line-height: 26px;
+	overflow-x: hidden;
+
+	// Source: https://medium.com/@MateMarschalko/improving-font-rendering-with-css-3383fc358cbc
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-smoothing: antialiased;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+img,
+svg {
+	vertical-align: top;
+	max-width: 100%;
+}
