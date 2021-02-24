@@ -9,7 +9,7 @@
 }
 
 .head__button {
-	background: $grey-darker;
+	background: $grey-dark;
 	border: none;
 	position: relative;
 	width: $line-height * 2;
@@ -25,5 +25,12 @@
 		width: $line-height - 6;
 		height: $line-height - 6;
 		border-radius: 50%;
+		transition: left $anim-time $anim-curve;
+	}
+
+	&.active {
+		span {
+			left: $line-height + 3;
+		}
 	}
 }

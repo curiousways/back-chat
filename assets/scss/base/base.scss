@@ -7,11 +7,18 @@ html {
 	font-size: 18px;
 	line-height: $line-height;
 	overflow-x: hidden;
+	transition: color $anim-time $anim-curve,
+		background-color $anim-time $anim-curve;
 
 	// Source: https://medium.com/@MateMarschalko/improving-font-rendering-with-css-3383fc358cbc
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	font-smoothing: antialiased;
+
+	&.dark {
+		color: $white;
+		background-color: $grey-darker;
+	}
 }
 
 *,
