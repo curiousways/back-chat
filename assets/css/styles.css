@@ -218,42 +218,6 @@ button[type=submit] {
   margin: auto;
 }
 
-input {
-  color: inherit;
-  background: none;
-  width: 100%;
-  text-align: center;
-  border: 2px solid;
-  border-radius: 26px;
-  outline: none;
-  padding: 13px;
-  margin-top: 13px;
-  margin-bottom: 13px;
-}
-input:focus {
-  border-color: #b486e2;
-}
-input::-webkit-input-placeholder {
-  color: inherit;
-  text-align: center;
-}
-input:-moz-placeholder {
-  /* Firefox 18- */
-  text-align: center;
-}
-input::-moz-placeholder {
-  /* Firefox 19+ */
-  text-align: center;
-}
-input:-ms-input-placeholder {
-  text-align: center;
-}
-
-button[type=submit] {
-  width: 100%;
-  margin-top: 13px;
-}
-
 .head {
   margin-top: 26px;
 }
@@ -284,6 +248,42 @@ button[type=submit] {
 }
 .head__button.active span {
   left: 29px;
+}
+
+input:not([type=checkbox]):not([type=radio]) {
+  color: inherit;
+  background: none;
+  width: 100%;
+  text-align: center;
+  border: 2px solid;
+  border-radius: 26px;
+  outline: none;
+  padding: 13px;
+  margin-top: 13px;
+  margin-bottom: 13px;
+}
+input:not([type=checkbox]):not([type=radio]):focus {
+  border-color: #b486e2;
+}
+input:not([type=checkbox]):not([type=radio])::-webkit-input-placeholder {
+  color: inherit;
+  text-align: center;
+}
+input:not([type=checkbox]):not([type=radio]):-moz-placeholder {
+  /* Firefox 18- */
+  text-align: center;
+}
+input:not([type=checkbox]):not([type=radio])::-moz-placeholder {
+  /* Firefox 19+ */
+  text-align: center;
+}
+input:not([type=checkbox]):not([type=radio]):-ms-input-placeholder {
+  text-align: center;
+}
+
+button[type=submit] {
+  width: 100%;
+  margin-top: 13px;
 }
 
 section {
