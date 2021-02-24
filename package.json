@@ -2,5 +2,8 @@
   "name": "back-chat",
   "version": "1.0.0",
   "author": "Curious Ways <hello@curiousways.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "sass": "^1.32.8"
+  }
 }
