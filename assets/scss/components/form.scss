@@ -3,8 +3,10 @@
 .form {
 	display: flex;
 	flex-direction: column;
+	max-width: 350px;
 	margin-top: -$line-height/2;
 	margin-bottom: -$line-height/2;
+	margin: auto;
 }
 
 .form__row {
@@ -49,22 +51,24 @@ input {
 
 button[type="submit"] {
 	@extend .button;
-	margin: $line-height/2;
+	width: 100%;
+	// margin: $line-height/2;
+	margin-top: $line-height/2;
 }
 
 @media (min-width: 601px) {
-	.form {
-		margin-right: -$line-height/2;
-		margin-left: -$line-height/2;
-	}
+	// .form {
+	// margin-right: -$line-height/2;
+	// margin-left: -$line-height/2;
+	// }
 
-	.form__row {
-		display: flex;
-		justify-content: center;
-	}
+	// .form__row {
+	// display: flex;
+	// justify-content: center;
+	// }
 
-	input {
-		margin-right: $line-height/2;
-		margin-left: $line-height/2;
-	}
+	// input {
+	// margin-right: $line-height/2;
+	// margin-left: $line-height/2;
+	// }
 }
