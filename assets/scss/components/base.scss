@@ -12,3 +12,15 @@ html {
 	-moz-osx-font-smoothing: grayscale;
 	font-smoothing: antialiased;
 }
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+img,
+svg {
+	vertical-align: top;
+	max-width: 100%;
+}

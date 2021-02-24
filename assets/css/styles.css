@@ -9,4 +9,16 @@ html {
   font-smoothing: antialiased;
 }
 
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+img,
+svg {
+  vertical-align: top;
+  max-width: 100%;
+}
+
 /*# sourceMappingURL=styles.css.map */
