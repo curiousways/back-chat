@@ -104,4 +104,10 @@ p {
   margin: 0 0 26px;
 }
 
+.head .col {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 /*# sourceMappingURL=styles.css.map */
