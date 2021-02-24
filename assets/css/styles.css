@@ -147,6 +147,10 @@ p:last-child {
   margin-bottom: 0;
 }
 
+a {
+  color: #b486e2;
+}
+
 .bubble {
   border-radius: 39px;
   padding: 26px;
