@@ -141,14 +141,18 @@ p:last-child {
 .bubble {
   border-radius: 39px;
   padding: 26px;
+  margin-top: 26px;
+  margin-bottom: 26px;
 }
 .bubble:nth-child(odd) {
   background-color: #b486e2;
   border-top-right-radius: 0;
+  margin-left: 26px;
 }
 .bubble:nth-child(even) {
   background-color: #e3e3e3;
   border-top-left-radius: 0;
+  margin-right: 26px;
 }
 
 button,

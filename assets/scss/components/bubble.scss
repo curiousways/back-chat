@@ -3,14 +3,18 @@
 .bubble {
 	border-radius: $line-height * 1.5;
 	padding: $line-height;
+	margin-top: $line-height;
+	margin-bottom: $line-height;
 
 	&:nth-child(odd) {
 		background-color: $purple;
 		border-top-right-radius: 0;
+		margin-left: $line-height;
 	}
 
 	&:nth-child(even) {
 		background-color: $grey-lighter;
 		border-top-left-radius: 0;
+		margin-right: $line-height;
 	}
 }
