@@ -17,12 +17,19 @@
 		border-top-left-radius: 0;
 		margin-right: $line-height;
 	}
+
+	&:last-child {
+		display: inline-block;
+		margin-top: 0;
+	}
 }
 
 @media (min-width: 768px) {
 	.bubble {
 		padding-right: $line-height * 2;
 		padding-left: $line-height * 2;
+		margin-top: $line-height * 2;
+		margin-bottom: $line-height * 2;
 
 		&:nth-child(odd) {
 			margin-right: 10%;

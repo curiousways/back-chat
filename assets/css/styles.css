@@ -154,11 +154,17 @@ p:last-child {
   border-top-left-radius: 0;
   margin-right: 26px;
 }
+.bubble:last-child {
+  display: inline-block;
+  margin-top: 0;
+}
 
 @media (min-width: 768px) {
   .bubble {
     padding-right: 52px;
     padding-left: 52px;
+    margin-top: 52px;
+    margin-bottom: 52px;
   }
   .bubble:nth-child(odd) {
     margin-right: 10%;
