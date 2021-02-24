@@ -21,8 +21,6 @@
  * 
  * © 2019 MyFonts Inc
 */
-/* @import must be at top of file, otherwise CSS will not work */
-@import url("//hello.myfonts.net/count/3aa5f4");
 @import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 @font-face {
   font-family: "Aribau Grotesk";
