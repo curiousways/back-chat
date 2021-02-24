@@ -128,8 +128,35 @@ p {
 }
 
 button,
-.button {
+.button,
+button[type=submit] {
   cursor: pointer;
+}
+
+.button, button[type=submit] {
+  color: #b486e2;
+  background: none;
+  font-weight: bold;
+  border: 2px solid #b486e2;
+  border-radius: 26px;
+  padding: 13px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+  text-align: center;
+  margin: auto;
+}
+
+input {
+  color: inherit;
+  background: none;
+  border: 2px solid;
+  border-radius: 26px;
+  padding: 13px;
+  margin-bottom: 13px;
 }
 
 .head {

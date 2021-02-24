@@ -4,3 +4,16 @@ button,
 .button {
 	cursor: pointer;
 }
+
+.button {
+	color: $primary;
+	background: none;
+	font-weight: bold;
+	border: 2px solid $primary;
+	border-radius: $line-height;
+	padding: $line-height/2;
+}
+
+button[type="submit"] {
+	@extend .button;
+}

@@ -33,21 +33,28 @@
 						<p>Check in from time to time and eavesdrop on architects chatting by text about... whatever architects chat about.</p>
 						<p><strong>Or we can email you snippets of chats when we post them.</strong></p>
 						<p><strong>Or... leave us your number and we'll text you when there's something new on the site. Don't worry, we won't call you. Phone calls aren't really our thing.</strong></p>
+						<form action="" method="POST">
+							<input type="text" placeholder="First Name" />
+							<input type="text" placeholder="Last Name" />
+							<input type="email" placeholder="Email" />
+							<input type="text" placeholder="Mobile" />
+							<button type="submit">submit</button>
+						</form>
 					</div>
 				</div>
 			</section>
 		</main>
 
-		<footer>
-			<script>
-				const toggle = document.getElementById('theme-toggle');
-				
-				toggle.addEventListener('click', function() {
-					toggle.classList.toggle('active');
-					document.documentElement.classList.toggle('dark');
-				})
-			</script>
-		</footer>
+		<footer></footer>
+		
+		<script>
+			const toggle = document.getElementById('theme-toggle');
+			
+			toggle.addEventListener('click', function() {
+				toggle.classList.toggle('active');
+				document.documentElement.classList.toggle('dark');
+			})
+		</script>
 
 	</body>
 </html>
