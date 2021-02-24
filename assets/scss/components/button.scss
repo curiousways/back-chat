@@ -1,6 +1,30 @@
 // Button
 
+$border-width: 2px;
+
 button,
 .button {
 	cursor: pointer;
+}
+
+.button {
+	color: $primary;
+	background: none;
+	font-weight: bold;
+	border: $border-width solid;
+	border-radius: $line-height;
+	outline: none;
+	padding: $line-height/2 $line-height * 2;
+
+	&:hover,
+	&:focus {
+		color: $grey;
+		text-decoration: underline;
+		text-decoration-thickness: $border-width;
+		text-underline-offset: $border-width;
+	}
+
+	&:active {
+		transform: translateY($border-width);
+	}
 }

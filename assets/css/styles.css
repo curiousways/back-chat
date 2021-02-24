@@ -128,8 +128,73 @@ p {
 }
 
 button,
-.button {
+.button,
+button[type=submit] {
   cursor: pointer;
+}
+
+.button, button[type=submit] {
+  color: #b486e2;
+  background: none;
+  font-weight: bold;
+  border: 2px solid;
+  border-radius: 26px;
+  outline: none;
+  padding: 13px 52px;
+}
+.button:hover, button[type=submit]:hover, .button:focus, button[type=submit]:focus {
+  color: #a6aabb;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 2px;
+}
+.button:active, button[type=submit]:active {
+  transform: translateY(2px);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+  margin-top: -13px;
+  margin-bottom: -13px;
+  margin: auto;
+}
+
+input {
+  color: inherit;
+  background: none;
+  width: 100%;
+  text-align: center;
+  border: 2px solid;
+  border-radius: 26px;
+  outline: none;
+  padding: 13px;
+  margin-top: 13px;
+  margin-bottom: 13px;
+}
+input:focus {
+  border-color: #b486e2;
+}
+input::-webkit-input-placeholder {
+  color: inherit;
+  text-align: center;
+}
+input:-moz-placeholder {
+  /* Firefox 18- */
+  text-align: center;
+}
+input::-moz-placeholder {
+  /* Firefox 19+ */
+  text-align: center;
+}
+input:-ms-input-placeholder {
+  text-align: center;
+}
+
+button[type=submit] {
+  width: 100%;
+  margin-top: 13px;
 }
 
 .head {

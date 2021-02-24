@@ -31,23 +31,39 @@
 						<p>We asked some friends who happen to be architects if they'd mind us eavesdropping on their text chat for a week or so and publishing it on a website. They said yes, so we did.</p>
 						<p>We asked if they had friends who would do the same. They said yes again, so we're going to start posting more chats – maybe one a month or something.</p>
 						<p>Check in from time to time and eavesdrop on architects chatting by text about... whatever architects chat about.</p>
+						<br>
 						<p><strong>Or we can email you snippets of chats when we post them.</strong></p>
 						<p><strong>Or... leave us your number and we'll text you when there's something new on the site. Don't worry, we won't call you. Phone calls aren't really our thing.</strong></p>
+
+						<form action="" method="POST" class="form">
+							<div class="form__row">
+								<input type="text" name="" placeholder="Name" />
+								<!-- <input type="text" name="" placeholder="Last Name" /> -->
+							</div>
+							<div class="form__row">
+								<input type="email" name="" placeholder="Email*" required />
+								<!-- <input type="text" name="" placeholder="Mobile" /> -->
+							</div>
+							<div class="form__row">
+								<button type="submit">sign me up</button>
+							</div>
+						</form>
+
 					</div>
 				</div>
 			</section>
 		</main>
 
-		<footer>
-			<script>
-				const toggle = document.getElementById('theme-toggle');
-				
-				toggle.addEventListener('click', function() {
-					toggle.classList.toggle('active');
-					document.documentElement.classList.toggle('dark');
-				})
-			</script>
-		</footer>
+		<footer></footer>
+		
+		<script>
+			const toggle = document.getElementById('theme-toggle');
+			
+			toggle.addEventListener('click', function() {
+				toggle.classList.toggle('active');
+				document.documentElement.classList.toggle('dark');
+			})
+		</script>
 
 	</body>
 </html>
