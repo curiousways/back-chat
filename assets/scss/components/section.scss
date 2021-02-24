@@ -6,5 +6,6 @@ section {
 
 section.convo .col {
 	background: $white;
-	border-radius: $line-height * 1.5;
+	border-top-left-radius: $line-height * 1.5;
+	border-top-right-radius: $line-height * 1.5;
 }

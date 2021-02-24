@@ -72,6 +72,15 @@ html.dark {
   color: #ffffff;
   background-color: #2b2b2b;
 }
+html.dark section.convo .col {
+  background-color: #222222;
+}
+html.dark .bubble:nth-child(odd) {
+  color: #404040;
+}
+html.dark .bubble:nth-child(even) {
+  background-color: #404040;
+}
 
 *,
 *:before,
@@ -283,7 +292,8 @@ section {
 
 section.convo .col {
   background: #ffffff;
-  border-radius: 39px;
+  border-top-left-radius: 39px;
+  border-top-right-radius: 39px;
 }
 
 /*# sourceMappingURL=styles.css.map */
