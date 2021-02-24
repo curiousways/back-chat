@@ -1,10 +1,11 @@
 // Base
 
 html {
-	color: $grey-dark;
-	font-family: $grey-lightest;
+	color: $grey-darker;
+	background-color: $grey-lightest;
+	font-family: "Aribau Grotesk", system-ui, sans-serif;
 	font-size: 18px;
-	line-height: 26px;
+	line-height: $line-height;
 	overflow-x: hidden;
 
 	// Source: https://medium.com/@MateMarschalko/improving-font-rendering-with-css-3383fc358cbc

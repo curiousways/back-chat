@@ -1,0 +1,29 @@
+// Typography
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Space Mono", monospace;
+	margin: 0 0 $line-height;
+}
+
+h1 {
+	font-size: 34px;
+	line-height: 40px;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-size: 18px;
+	line-height: 24px;
+}
+
+p {
+	margin: 0 0 $line-height;
+}
