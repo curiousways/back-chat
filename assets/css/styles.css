@@ -137,14 +137,11 @@ p:last-child {
 }
 
 a {
-  color: #b486e2;
+  color: inherit;
   text-underline-offset: 1px;
 }
 a:hover, a:focus {
   text-decoration: none;
-}
-a:active {
-  color: #9b5dd8;
 }
 
 .alpha, h1 {
@@ -208,28 +205,28 @@ h6 {
     margin-left: 10%;
   }
 }
-button,
-.button,
 button[type=submit] {
-  cursor: pointer;
+  width: 100%;
 }
 
-.button, button[type=submit] {
+.button, button {
   color: #b486e2;
   background: none;
+  display: inline-block;
   font-weight: bold;
   border: 2px solid;
   border-radius: 26px;
   outline: none;
+  cursor: pointer;
   padding: 13px 52px;
 }
-.button:hover, button[type=submit]:hover, .button:focus, button[type=submit]:focus {
+.button:hover, button:hover, .button:focus, button:focus {
   color: #a6aabb;
   text-decoration: underline;
   text-decoration-thickness: 2px;
   text-underline-offset: 2px;
 }
-.button:active, button[type=submit]:active {
+.button:active, button:active {
   transform: translateY(2px);
 }
 
@@ -244,10 +241,6 @@ button[type=submit] {
 
 .form__row {
   margin-bottom: 26px;
-}
-
-button[type=submit] {
-  width: 100%;
 }
 
 .head {
@@ -331,6 +324,9 @@ input[type=checkbox] {
 label {
   text-align: left;
   cursor: pointer;
+}
+label a {
+  color: #b486e2;
 }
 
 section {

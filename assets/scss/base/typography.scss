@@ -35,16 +35,12 @@ p {
 }
 
 a {
-	color: $primary;
+	color: inherit;
 	text-underline-offset: 1px;
 
 	&:hover,
 	&:focus {
 		text-decoration: none;
-	}
-
-	&:active {
-		color: darken($primary, 10);
 	}
 }
 

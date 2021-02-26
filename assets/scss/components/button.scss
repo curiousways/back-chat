@@ -2,18 +2,23 @@
 
 $border-width: 2px;
 
-button,
-.button {
-	cursor: pointer;
+button {
+	@extend .button;
+
+	&[type="submit"] {
+		width: 100%;
+	}
 }
 
 .button {
 	color: $primary;
 	background: none;
+	display: inline-block;
 	font-weight: bold;
 	border: $border-width solid;
 	border-radius: $line-height;
 	outline: none;
+	cursor: pointer;
 	padding: $line-height/2 $line-height * 2;
 
 	&:hover,
