@@ -1,0 +1,17 @@
+// Footer
+
+.foot {
+}
+
+@media (max-width: 767px) {
+	.foot {
+		text-align: center;
+	}
+}
+
+@media (min-width: 768px) {
+	.foot .col {
+		display: flex;
+		justify-content: space-between;
+	}
+}

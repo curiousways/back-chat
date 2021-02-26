@@ -4,8 +4,15 @@ section {
 	margin-bottom: $line-height * 2;
 }
 
-section.chat .col {
+.wrapper {
 	background: $white;
 	border-top-left-radius: $line-height * 1.5;
 	border-top-right-radius: $line-height * 1.5;
+}
+
+@media (min-width: 768px) {
+	.wrapper .col {
+		margin-right: 10%;
+		margin-left: 10%;
+	}
 }
