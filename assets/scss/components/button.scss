@@ -2,12 +2,9 @@
 
 $border-width: 2px;
 
-button {
-	@extend .button;
-
-	&[type="submit"] {
-		width: 100%;
-	}
+button,
+.button {
+	cursor: pointer;
 }
 
 .button {
@@ -32,4 +29,9 @@ button {
 	&:active {
 		transform: translateY($border-width);
 	}
+}
+
+button[type="submit"] {
+	@extend .button;
+	width: 100%;
 }

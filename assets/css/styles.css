@@ -205,11 +205,13 @@ h6 {
     margin-left: 10%;
   }
 }
+button,
+.button,
 button[type=submit] {
-  width: 100%;
+  cursor: pointer;
 }
 
-.button, button {
+.button, button[type=submit] {
   color: #b486e2;
   background: none;
   display: inline-block;
@@ -220,14 +222,18 @@ button[type=submit] {
   cursor: pointer;
   padding: 13px 52px;
 }
-.button:hover, button:hover, .button:focus, button:focus {
+.button:hover, button[type=submit]:hover, .button:focus, button[type=submit]:focus {
   color: #a6aabb;
   text-decoration: underline;
   text-decoration-thickness: 2px;
   text-underline-offset: 2px;
 }
-.button:active, button:active {
+.button:active, button[type=submit]:active {
   transform: translateY(2px);
+}
+
+button[type=submit] {
+  width: 100%;
 }
 
 .form {
