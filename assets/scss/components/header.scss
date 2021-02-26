@@ -10,6 +10,18 @@
 	}
 }
 
+.head__logo {
+	position: relative;
+
+	img:last-child {
+		position: absolute;
+		top: 0;
+		left: 0;
+		opacity: 0;
+		transition: opacity $anim-time $anim-curve;
+	}
+}
+
 .head__button {
 	background: $grey-dark;
 	border: none;
