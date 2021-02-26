@@ -68,23 +68,6 @@ html {
   font-smoothing: antialiased;
 }
 
-html.dark {
-  color: #ffffff;
-  background-color: #2b2b2b;
-}
-html.dark .head__logo img:last-child {
-  opacity: 1;
-}
-html.dark .wrapper {
-  background-color: #222222;
-}
-html.dark .bubble:nth-child(odd) {
-  color: #404040;
-}
-html.dark .bubble:nth-child(even) {
-  background-color: #404040;
-}
-
 *,
 *:before,
 *:after {
@@ -95,6 +78,23 @@ img,
 svg {
   vertical-align: top;
   max-width: 100%;
+}
+
+html.dark {
+  color: #ffffff;
+  background-color: #2b2b2b;
+}
+html.dark .head__logo img:last-child {
+  opacity: 1;
+}
+html.dark .wrap {
+  background-color: #222222;
+}
+html.dark .bubble:nth-child(odd) {
+  color: #404040;
+}
+html.dark .bubble:nth-child(even) {
+  background-color: #404040;
 }
 
 .row {
@@ -171,7 +171,6 @@ h6 {
 .bubble {
   border-radius: 39px;
   padding: 26px;
-  margin-top: 26px;
   margin-bottom: 26px;
 }
 .bubble:nth-child(odd) {
@@ -186,15 +185,14 @@ h6 {
 }
 .bubble:last-child {
   display: inline-block;
-  margin-top: 0;
+  margin-bottom: 0;
 }
 
 @media (min-width: 768px) {
   .bubble {
     padding-right: 52px;
     padding-left: 52px;
-    margin-top: 52px;
-    margin-bottom: 52px;
+    margin-bottom: 39px;
   }
   .bubble:nth-child(odd) {
     margin-left: 40%;
@@ -234,6 +232,10 @@ button[type=submit] {
   width: 100%;
 }
 
+.foot .wrap {
+  padding: 13px 0;
+}
+
 @media (max-width: 767px) {
   .foot {
     text-align: center;
@@ -243,6 +245,9 @@ button[type=submit] {
   .foot .col {
     display: flex;
     justify-content: space-between;
+  }
+  .foot p {
+    margin: 0;
   }
   .foot br {
     display: none;
@@ -350,17 +355,19 @@ label a {
 section {
   margin-bottom: 52px;
 }
+section .wrap {
+  padding: 26px 0;
+}
 
-.wrapper {
+.wrap {
   background: #ffffff;
   border-top-left-radius: 39px;
   border-top-right-radius: 39px;
 }
 
-@media (min-width: 768px) {
-  .wrapper .col {
-    margin-right: 10%;
-    margin-left: 10%;
+@media (min-width: 1024px) {
+  .wrap .col {
+    margin: 0 10%;
   }
 }
 
