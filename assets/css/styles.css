@@ -251,6 +251,15 @@ button[type=submit] {
   justify-content: space-between;
 }
 
+.head__logo {
+  position: relative;
+}
+.head__logo img:last-child {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .head__button {
   background: #404040;
   border: none;
