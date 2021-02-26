@@ -12,8 +12,3 @@
 .form__row {
 	margin-bottom: $line-height;
 }
-
-button[type="submit"] {
-	@extend .button;
-	width: 100%;
-}

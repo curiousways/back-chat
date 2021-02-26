@@ -16,27 +16,6 @@ html {
 	font-smoothing: antialiased;
 }
 
-html.dark {
-	color: $white;
-	background-color: $grey-darker;
-
-	.head__logo img:last-child {
-		opacity: 1;
-	}
-
-	section.chat .col {
-		background-color: $grey-darkest;
-	}
-
-	.bubble:nth-child(odd) {
-		color: $body-color;
-	}
-
-	.bubble:nth-child(even) {
-		background-color: $grey-dark;
-	}
-}
-
 *,
 *:before,
 *:after {
@@ -47,4 +26,27 @@ img,
 svg {
 	vertical-align: top;
 	max-width: 100%;
+}
+
+// Dark theme
+
+html.dark {
+	color: $white;
+	background-color: $grey-darker;
+
+	.head__logo img:last-child {
+		opacity: 1;
+	}
+
+	.wrap {
+		background-color: $grey-darkest;
+	}
+
+	.bubble:nth-child(odd) {
+		color: $body-color;
+	}
+
+	.bubble:nth-child(even) {
+		background-color: $grey-dark;
+	}
 }

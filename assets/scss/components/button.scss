@@ -10,10 +10,12 @@ button,
 .button {
 	color: $primary;
 	background: none;
+	display: inline-block;
 	font-weight: bold;
 	border: $border-width solid;
 	border-radius: $line-height;
 	outline: none;
+	cursor: pointer;
 	padding: $line-height/2 $line-height * 2;
 
 	&:hover,
@@ -27,4 +29,9 @@ button,
 	&:active {
 		transform: translateY($border-width);
 	}
+}
+
+button[type="submit"] {
+	@extend .button;
+	width: 100%;
 }

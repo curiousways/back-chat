@@ -1,0 +1,13 @@
+// Wrap
+
+.wrap {
+	background: $white;
+	border-top-left-radius: $line-height * 1.5;
+	border-top-right-radius: $line-height * 1.5;
+}
+
+@media (min-width: 1024px) {
+	.wrap .col {
+		margin: 0 10%;
+	}
+}

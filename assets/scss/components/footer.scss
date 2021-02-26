@@ -1,0 +1,28 @@
+// Footer
+
+.foot .wrap {
+	padding: $line-height/2 0;
+}
+
+@media (max-width: 767px) {
+	.foot {
+		text-align: center;
+	}
+}
+
+@media (min-width: 768px) {
+	.foot {
+		.col {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		p {
+			margin: 0;
+		}
+
+		br {
+			display: none;
+		}
+	}
+}
