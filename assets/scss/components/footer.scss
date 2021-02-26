@@ -10,8 +10,14 @@
 }
 
 @media (min-width: 768px) {
-	.foot .col {
-		display: flex;
-		justify-content: space-between;
+	.foot {
+		.col {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		br {
+			display: none;
+		}
 	}
 }

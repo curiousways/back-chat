@@ -244,6 +244,9 @@ button[type=submit] {
     display: flex;
     justify-content: space-between;
   }
+  .foot br {
+    display: none;
+  }
 }
 .form {
   display: flex;
