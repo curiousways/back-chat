@@ -149,7 +149,6 @@ p:last-child {
 
 a {
   color: #b486e2;
-  text-decoration-thickness: 1px;
   text-underline-offset: 1px;
 }
 a:hover, a:focus {
