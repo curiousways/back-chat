@@ -15,8 +15,7 @@ h6 {
 }
 
 h1 {
-	font-size: 34px;
-	line-height: 40px;
+	@extend .alpha;
 }
 
 h2,
@@ -24,8 +23,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-size: 18px;
-	line-height: 24px;
+	@extend .beta;
 }
 
 p {
@@ -50,7 +48,37 @@ a {
 	}
 }
 
-.iota {
+.omega {
+}
+
+.alpha {
+	font-size: 34px;
+	line-height: 40px;
+}
+
+.beta {
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.gamma {
+}
+
+.delta {
+}
+
+.epsilon {
+}
+
+.zeta {
+	font-size: 16px;
+	line-height: 22px;
+}
+
+.eta {
 	font-size: 14px;
 	line-height: 18px;
+}
+
+.iota {
 }
