@@ -1,8 +1,11 @@
 // Bubble
 
 .bubble {
+	color: $body-color;
 	border-radius: $line-height * 1.5;
 	padding: $line-height;
+	transition: color $anim-time $anim-curve,
+		background-color $anim-time $anim-curve;
 	margin-bottom: $line-height;
 
 	&:nth-child(odd) {

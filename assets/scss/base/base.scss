@@ -46,11 +46,8 @@ html.dark {
 		background-color: $grey-darkest;
 	}
 
-	.bubble:nth-child(odd) {
-		color: $body-color;
-	}
-
 	.bubble:nth-child(even) {
+		color: $white;
 		background-color: $grey-dark;
 	}
 }
