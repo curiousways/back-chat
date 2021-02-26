@@ -1,9 +1,10 @@
 // Wrap
 
 .wrap {
-	background: $white;
+	background-color: $white;
 	border-top-left-radius: $line-height * 1.5;
 	border-top-right-radius: $line-height * 1.5;
+	transition: background-color $anim-time $anim-curve;
 }
 
 @media (min-width: 1024px) {
