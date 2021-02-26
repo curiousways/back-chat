@@ -1,9 +1,5 @@
 // Utilities
 
-.center {
-	text-align: center;
-}
-
 .hide-sm,
 .hide-lg {
 	display: none;
@@ -18,5 +14,9 @@
 @media (min-width: 768px) {
 	.hide-sm {
 		display: block;
+	}
+
+	.center {
+		text-align: center;
 	}
 }

@@ -1,5 +1,11 @@
 // Base
 
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
 html {
 	color: $body-color;
 	background-color: $grey-lightest;
@@ -16,10 +22,8 @@ html {
 	font-smoothing: antialiased;
 }
 
-*,
-*:before,
-*:after {
-	box-sizing: border-box;
+main {
+	min-height: calc(100vh - 234px);
 }
 
 img,
