@@ -20,6 +20,10 @@ html.dark {
 	color: $white;
 	background-color: $grey-darker;
 
+	.head__logo img:last-child {
+		opacity: 1;
+	}
+
 	section.chat .col {
 		background-color: $grey-darkest;
 	}
