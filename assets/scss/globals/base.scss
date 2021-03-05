@@ -1,0 +1,53 @@
+// Base
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+html {
+	color: $body-color;
+	background-color: $grey-lightest;
+	font-family: "Aribau Grotesk", system-ui, sans-serif;
+	font-size: 18px;
+	line-height: $line-height;
+	overflow-x: hidden;
+	transition: color $anim-time $anim-curve,
+		background-color $anim-time $anim-curve;
+
+	// Source: https://medium.com/@MateMarschalko/improving-font-rendering-with-css-3383fc358cbc
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-smoothing: antialiased;
+}
+
+main {
+	min-height: calc(100vh - 234px);
+}
+
+img,
+svg {
+	vertical-align: top;
+	max-width: 100%;
+}
+
+// Dark theme
+
+html.dark {
+	color: $white;
+	background-color: $grey-darker;
+
+	.head__logo img:last-child {
+		opacity: 1;
+	}
+
+	.wrap {
+		background-color: $grey-darkest;
+	}
+
+	.bubble:nth-child(even) {
+		color: $white;
+		background-color: $grey-dark;
+	}
+}

@@ -1,0 +1,23 @@
+// Colours
+
+$grey-lightest: #f4f4f4;
+$grey-lighter: #e3e3e3;
+// $grey-light: ;
+$grey: #a6aabb;
+$grey-dark: #404040;
+$grey-darker: #2b2b2b;
+$grey-darkest: #222222;
+$purple: #b486e2;
+$white: #ffffff;
+
+$primary: $purple;
+
+// Typography
+
+$body-color: $grey-dark;
+$line-height: 26px;
+
+// Transitions
+
+$anim-time: 0.5s;
+$anim-curve: cubic-bezier(0.4, 0, 0.2, 1);

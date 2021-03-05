@@ -1,0 +1,80 @@
+// Typography
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: "Space Mono", monospace;
+	margin: 0 0 $line-height;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+h1 {
+	@extend .alpha;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+	@extend .beta;
+}
+
+p {
+	margin: 0 0 $line-height;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+a {
+	color: inherit;
+	text-underline-offset: 1px;
+
+	&:hover,
+	&:focus {
+		text-decoration: none;
+	}
+}
+
+.omega {
+}
+
+.alpha {
+	font-size: 34px;
+	line-height: 40px;
+}
+
+.beta {
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.gamma {
+}
+
+.delta {
+}
+
+.epsilon {
+}
+
+.zeta {
+	font-size: 16px;
+	line-height: 22px;
+}
+
+.eta {
+	font-size: 14px;
+	line-height: 18px;
+}
+
+.iota {
+}

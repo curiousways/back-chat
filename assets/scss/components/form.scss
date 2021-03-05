@@ -1,0 +1,18 @@
+// Form
+
+.form {
+	display: flex;
+	flex-direction: column;
+	max-width: 350px;
+	margin-top: -$line-height/2;
+	margin-bottom: -$line-height/2;
+	margin: auto;
+}
+
+.form__row {
+	margin-bottom: $line-height;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}

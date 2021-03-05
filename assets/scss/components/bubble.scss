@@ -1,0 +1,43 @@
+// Bubble
+
+.bubble {
+	color: $body-color;
+	border-radius: $line-height * 1.5;
+	padding: $line-height;
+	transition: color $anim-time $anim-curve,
+		background-color $anim-time $anim-curve;
+	margin-bottom: $line-height;
+
+	&:nth-child(odd) {
+		background-color: $purple;
+		border-top-right-radius: 0;
+		margin-left: $line-height;
+	}
+
+	&:nth-child(even) {
+		background-color: $grey-lighter;
+		border-top-left-radius: 0;
+		margin-right: $line-height;
+	}
+
+	&:last-child {
+		display: inline-block;
+		margin-bottom: 0;
+	}
+}
+
+@media (min-width: 768px) {
+	.bubble {
+		padding-right: $line-height * 2;
+		padding-left: $line-height * 2;
+		margin-bottom: $line-height * 1.5;
+
+		&:nth-child(odd) {
+			margin-left: 40%;
+		}
+
+		&:nth-child(even) {
+			margin-right: 40%;
+		}
+	}
+}

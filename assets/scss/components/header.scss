@@ -1,0 +1,50 @@
+// Header
+
+.head {
+	margin-top: $line-height;
+
+	.col {
+		display: flex;
+		// align-items: center;
+		justify-content: space-between;
+	}
+}
+
+.head__logo {
+	position: relative;
+
+	img:last-child {
+		position: absolute;
+		top: 0;
+		left: 0;
+		opacity: 0;
+		transition: opacity $anim-time $anim-curve;
+	}
+}
+
+.head__button {
+	background-color: $grey-dark;
+	border: none;
+	position: relative;
+	width: $line-height * 2;
+	height: $line-height;
+	border-radius: $line-height;
+	padding: 0;
+
+	span {
+		background-color: $grey;
+		position: absolute;
+		top: 3px;
+		left: 3px;
+		width: $line-height - 6;
+		height: $line-height - 6;
+		border-radius: 50%;
+		transition: left $anim-time $anim-curve;
+	}
+
+	&.active {
+		span {
+			left: $line-height + 3;
+		}
+	}
+}

@@ -1,0 +1,25 @@
+// Utilities
+
+.center {
+	text-align: center;
+}
+
+.hide-sm,
+.hide-lg {
+	display: none;
+}
+
+@media (max-width: 767px) {
+	.hide-lg {
+		display: block;
+	}
+}
+
+@media (min-width: 768px) {
+	.center-lg {
+		text-align: center;
+	}
+	.hide-sm {
+		display: block;
+	}
+}
