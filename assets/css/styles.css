@@ -36,6 +36,10 @@
   font-style: normal;
   font-display: swap;
 }
+.center {
+  text-align: center;
+}
+
 .hide-sm,
 .hide-lg {
   display: none;
@@ -47,12 +51,12 @@
   }
 }
 @media (min-width: 768px) {
-  .hide-sm {
-    display: block;
+  .center-lg {
+    text-align: center;
   }
 
-  .center {
-    text-align: center;
+  .hide-sm {
+    display: block;
   }
 }
 *,
@@ -268,6 +272,9 @@ button[type=submit] {
 
 .form__row {
   margin-bottom: 26px;
+}
+.form__row:last-child {
+  margin-bottom: 0;
 }
 
 .head {
