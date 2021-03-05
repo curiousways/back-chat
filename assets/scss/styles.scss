@@ -1,9 +1,9 @@
-@import "base/fonts";
-@import "base/variables";
-@import "base/utilities";
-@import "base/base";
-@import "base/grid";
-@import "base/typography";
+@import "globals/fonts";
+@import "globals/variables";
+@import "globals/utilities";
+@import "globals/base";
+@import "globals/grid";
+@import "globals/typography";
 
 @import "components/bubble";
 @import "components/button";

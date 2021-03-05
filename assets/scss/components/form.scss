@@ -11,4 +11,8 @@
 
 .form__row {
 	margin-bottom: $line-height;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
 }

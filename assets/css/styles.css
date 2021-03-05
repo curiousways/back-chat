@@ -36,6 +36,10 @@
   font-style: normal;
   font-display: swap;
 }
+.center {
+  text-align: center;
+}
+
 .hide-sm,
 .hide-lg {
   display: none;
@@ -47,12 +51,12 @@
   }
 }
 @media (min-width: 768px) {
-  .hide-sm {
-    display: block;
+  .center-lg {
+    text-align: center;
   }
 
-  .center {
-    text-align: center;
+  .hide-sm {
+    display: block;
   }
 }
 *,
@@ -269,13 +273,15 @@ button[type=submit] {
 .form__row {
   margin-bottom: 26px;
 }
+.form__row:last-child {
+  margin-bottom: 0;
+}
 
 .head {
   margin-top: 26px;
 }
 .head .col {
   display: flex;
-  align-items: center;
   justify-content: space-between;
 }
 
@@ -345,15 +351,18 @@ input:not([type=checkbox]):not([type=radio]):-ms-input-placeholder {
 input[type=checkbox] {
   float: left;
   cursor: pointer;
+  margin-top: 1px;
   margin-right: 6.5px;
 }
 
 label {
-  text-align: left;
+  display: inline-block;
   cursor: pointer;
+  margin-right: 26px;
+  margin-bottom: 26px;
 }
-label a {
-  color: #b486e2;
+label:last-of-type {
+  margin-right: 0;
 }
 
 section {
