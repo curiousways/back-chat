@@ -344,15 +344,18 @@ input:not([type=checkbox]):not([type=radio]):-ms-input-placeholder {
 input[type=checkbox] {
   float: left;
   cursor: pointer;
+  margin-top: 1px;
   margin-right: 6.5px;
 }
 
 label {
-  text-align: left;
+  display: inline-block;
   cursor: pointer;
+  margin-right: 26px;
+  margin-bottom: 26px;
 }
-label a {
-  color: #b486e2;
+label:last-of-type {
+  margin-right: 0;
 }
 
 section {

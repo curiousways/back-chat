@@ -38,14 +38,17 @@ input:not([type="checkbox"]):not([type="radio"]) {
 input[type="checkbox"] {
 	float: left;
 	cursor: pointer;
+	margin-top: 1px;
 	margin-right: $line-height/4;
 }
 
 label {
-	text-align: left;
+	display: inline-block;
 	cursor: pointer;
+	margin-right: $line-height;
+	margin-bottom: $line-height;
 
-	a {
-		color: $primary;
+	&:last-of-type {
+		margin-right: 0;
 	}
 }
