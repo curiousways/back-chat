@@ -275,7 +275,6 @@ button[type=submit] {
 }
 .head .col {
   display: flex;
-  align-items: center;
   justify-content: space-between;
 }
 
