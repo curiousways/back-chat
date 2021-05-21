@@ -204,9 +204,11 @@ h6 {
   }
   .bubble:nth-child(odd) {
     margin-left: 40%;
+    min-width: 60%;
   }
   .bubble:nth-child(even) {
     margin-right: 40%;
+    min-width: 60%;
   }
 }
 button,
