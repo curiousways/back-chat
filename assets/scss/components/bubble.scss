@@ -34,10 +34,12 @@
 
 		&:nth-child(odd) {
 			margin-left: 40%;
+			min-width: 60%;
 		}
 
 		&:nth-child(even) {
 			margin-right: 40%;
+			min-width: 60%;
 		}
 	}
 }
